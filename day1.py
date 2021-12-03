@@ -3,6 +3,7 @@ def get_list_from_file(filename):
         formatted_input = [int(line.strip()) for line in file]
     return formatted_input
 
+# Part 1
 def count_number_of_depth_increases(depths=[], get_from_file=False):
     if get_from_file:
         depths = get_list_from_file('inputs/day1_input.txt')
@@ -12,6 +13,7 @@ def count_number_of_depth_increases(depths=[], get_from_file=False):
             num_increases += 1
     return num_increases
 
+# Part 2
 def count_number_of_sliding_window_increases(depths=[], width=3, get_from_file=False):
     if get_from_file:
         depths = get_list_from_file('inputs/day1_input.txt')
